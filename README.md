@@ -11,14 +11,13 @@
 
 > JavaScript library to validate credit card numbers using luhn algorithm
 
-## Getting Started
 
-### Installation
+## Installation
 ```bash
 $ npm i -S luhn-cc
 ```
 
-### Usage
+## Usage
 
 ```javascript
 import luhnCC from 'luhn-cc';
@@ -27,7 +26,7 @@ luhnCC.isValid('378282246310005'); // true
 luhnCC.isValid('378282246'); // false
 ```
 
-### Tested Cards
+## Tested Cards
 | Credit Card Type     | Credit Card Number | Tested |
 |----------------------|--------------------|--------|
 | AMEX                 | 378282246310005    | ✅      |

@@ -10,7 +10,25 @@
 
 > JavaScript library to validate credit card numbers using luhn algorithm
 
-### Development Setup
+## Getting Started
+
+### Installation
+```bash
+$ npm i -S luhn-cc
+```
+
+### Usage
+
+```javascript
+  import luhnCC from 'luhn-cc';
+
+  luhnCC.isValid('378282246310005'); // true
+  luhnCC.isValid('378282246'); // false
+```
+
+### Tested Cards
+
+## Development Setup
 
 ```bash
 # install dependencies

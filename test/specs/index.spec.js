@@ -56,4 +56,14 @@ describe('luhnCC', () => {
     });
   });
 
+  describe('isValid(cardNumber) => Discover', () => {
+    it('should pass validation with a valid Discover card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.discover.valid), true);
+    });
+
+    it('should fail with a valid Discover card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.discover.invalid), false);
+    });
+  });
+
 });

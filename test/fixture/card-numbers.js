@@ -6,14 +6,14 @@ class CardNumberFixture {
 }
 
 const cardNumbers = {
-  amex: new CardNumberFixture('378282246310005'),
-  amexCorporate: new CardNumberFixture('378734493671000'),
+  amex              : new CardNumberFixture('378282246310005'),
+  amexCorporate     : new CardNumberFixture('378734493671000'),
   australianBankCard: new CardNumberFixture('5610591081018250'),
-  dinersClub: new CardNumberFixture('30569309025904'),
-  discover: new CardNumberFixture('6011111111111117'),
-  jcb: new CardNumberFixture('3530111333300000'),
-  masterCard: new CardNumberFixture('5555555555554444'),
-  visa: new CardNumberFixture('4111111111111111')
+  dinersClub        : new CardNumberFixture('30569309025904'),
+  discover          : new CardNumberFixture('6011111111111117'),
+  jcb               : new CardNumberFixture('3530111333300000'),
+  masterCard        : new CardNumberFixture('5555555555554444'),
+  visa              : new CardNumberFixture('4111111111111111')
 };
 
 

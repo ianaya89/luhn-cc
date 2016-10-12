@@ -1,14 +1,18 @@
 /* global describe it */
 
-import cardNumbers from '../fixture/card-numbers';
 import assert from 'assert';
+import cardNumbers from '../fixture/card-numbers';
 import luhnCC from '../../src';
 
 describe('luhnCC', () => {
 
-  describe('isValid()', () => {
+  describe('isValid() => AMEX', () => {
     it('should pass validation with a valid AMEX card number', () => {
-      console.log(luhnCC.isValid(cardNumbers.amex.valid));
+      assert.equal(luhnCC.isValid(cardNumbers.amex.valid), true);
+    });
+
+    it('should fail with a valid AMEX card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.amex.invalid), false);
     });
   });
 

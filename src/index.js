@@ -12,8 +12,8 @@ luhnCC.isValid = function(cardNumber) {
 
   cardNumber = cardNumber.replace(/\D/g, '');
 
-  for (let n = cardNumber.length - 1; n >= 0; n--) {
-    const cDigit = cardNumber.charAt(n);
+  for (let i = cardNumber.length - 1; i >= 0; i -= 1) {
+    const cDigit = cardNumber.charAt(i);
     nDigit = parseInt(cDigit, 10);
 
     nDigit = bEven ? nDigit * 2 : nDigit;

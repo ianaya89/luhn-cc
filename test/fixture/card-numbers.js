@@ -12,7 +12,8 @@ const cardNumbers = {
   dinersClub: new CardNumberFixture('30569309025904'),
   discover: new CardNumberFixture('6011111111111117'),
   jcb: new CardNumberFixture('3530111333300000'),
-  masterCard: new CardNumberFixture('5555555555554444')
+  masterCard: new CardNumberFixture('5555555555554444'),
+  visa: new CardNumberFixture('4111111111111111')
 };
 
 

@@ -86,4 +86,14 @@ describe('luhnCC', () => {
     });
   });
 
+  describe('isValid(cardNumber) => VISA', () => {
+    it('should pass validation with a valid VISA card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.visa.valid), true);
+    });
+
+    it('should fail with a valid VISA card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.visa.invalid), false);
+    });
+  });
+
 });

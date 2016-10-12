@@ -7,6 +7,7 @@
     "name": "Ignacio Anaya",
     "email": "ignacio.anaya89@gmail.com"
   },
+  "keyword": ["credit", "card", "credit-card", "validator", "validation", "luhn"],
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode=build",

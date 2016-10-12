@@ -76,4 +76,14 @@ describe('luhnCC', () => {
     });
   });
 
+  describe('isValid(cardNumber) => Master Card', () => {
+    it('should pass validation with a valid Master Card card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.masterCard.valid), true);
+    });
+
+    it('should fail with a valid Master Card card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.masterCard.invalid), false);
+    });
+  });
+
 });

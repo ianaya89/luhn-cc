@@ -12,7 +12,7 @@ dependencies:
 
 test:
   override:
-    - npm run unit
+    - npm test
     - COVERALLS_SERVICE_NAME="circleci" COVERALLS_SERVICE_JOB_ID="$CIRCLE_BUILD_NUM" ./node_modules/coveralls/bin/coveralls.js < ./test/unit/coverage/lcov.info
     - ./node_modules/.bin/bithound check git@github.com:ianaya89/luhn-cc.git
   post:

@@ -20,13 +20,24 @@ $ npm i -S luhn-cc
 ### Usage
 
 ```javascript
-  import luhnCC from 'luhn-cc';
+import luhnCC from 'luhn-cc';
 
-  luhnCC.isValid('378282246310005'); // true
-  luhnCC.isValid('378282246'); // false
+luhnCC.isValid('378282246310005'); // true
+luhnCC.isValid('378282246'); // false
 ```
 
 ### Tested Cards
+| Credit Card Type     | Credit Card Number | Tested |
+|----------------------|--------------------|--------|
+| AMEX                 | 378282246310005    | ✅      |
+| AMEX Corporate       | 378734493671000    | ✅      |
+| Australian Bank Card | 5610591081018250   | ✅      |
+| Diners Club          | 30569309025904     | ✅      |
+| Discover             | 6011111111111117   | ✅      |
+| JCB                  | 3530111333300000   | ✅      |
+| Master Card          | 5555555555554444   | ✅      |
+| VISA                 | 4111111111111111   | ✅      |
+| Switch/Solo          | 6331101999990016   | ✅      |
 
 ## Development Setup
 

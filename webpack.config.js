@@ -2,6 +2,8 @@ const path    = require('path');
 const env     = require('yargs').argv.mode;
 const webpack = require('webpack');
 
+const projectRoot = path.resolve(__dirname, '/');
+
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 const libraryName = 'luhn-cc';
@@ -27,16 +29,20 @@ const config = {
     umdNamedDefine: true
   },
   module: {
+    preLoaders: [
+      {
+        test: /(\.jsx|\.js)$/,
+        loader: 'eslint',
+        include: projectRoot,
+        exclude: /(node_modules|bower_components)/
+      }
+    ],
     loaders: [
       {
         test: /(\.jsx|\.js)$/,
         loader: 'babel',
+        include: projectRoot,
         exclude: /(node_modules|bower_components)/
-      },
-      {
-        test: /(\.jsx|\.js)$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
       }
     ]
   },

@@ -2,7 +2,7 @@
   "name": "luhn-cc",
   "version": "0.0.1",
   "description": "JavaScript library to validate credit card numbers using luhn algorithm",
-  "main": "lib/luhn-cc.min.js",
+  "main": "dist/luhn-cc.min.js",
   "author": {
     "name": "Ignacio Anaya",
     "email": "ignacio.anaya89@gmail.com"
@@ -12,6 +12,7 @@
     "build": "webpack --mode=build",
     "dev": "webpack --progress --colors --watch --mode=dev",
     "test": "karma start karma.conf.js --single-run",
+    "test-watch": "karma start karma.conf.js --auto-watch",
     "check-cover": "open coverage/lcov-report/index.html",
     "eslint": "eslint . --ext .js",
     "prepublish": "npm run build"

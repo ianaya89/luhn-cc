@@ -1,4 +1,4 @@
-# luhn-cc
+# 💳✅❌ luhn-cc
 
 [![CircleCI](https://circleci.com/gh/ianaya89/luhn-cc.svg?style=svg)](https://circleci.com/gh/ianaya89/luhn-cc)
 [![Coverage Status](https://coveralls.io/repos/github/ianaya89/luhn-cc/badge.svg?branch=master)](https://coveralls.io/github/ianaya89/luhn-cc?branch=master)

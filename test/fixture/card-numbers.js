@@ -1,13 +1,14 @@
-const cardNumbers = {};
+class CardNumberFixture {
+  constructor(valid, invalid) {
+    this.valid = valid;
+    this.invalid = invalid || valid.substring(0, valid.length - 1);
+  }
+}
 
-cardNumbers.amex = {
-  valid  : '378282246310005',
-  invalid: '37828224631000'
-};
-
-cardNumbers.amexCorporate = {
-  valid  : '378282246310005',
-  invalid: '37828224631000'
+const cardNumbers = {
+  amex: new CardNumberFixture('378282246310005'),
+  amexCorporate: new CardNumberFixture('378734493671000'),
+  australianBankCard: new CardNumberFixture('5610591081018250')
 };
 
 

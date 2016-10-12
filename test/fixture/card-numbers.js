@@ -14,7 +14,6 @@ const cardNumbers = {
   jcb               : new CardNumberFixture('3530111333300000'),
   masterCard        : new CardNumberFixture('5555555555554444'),
   visa              : new CardNumberFixture('4111111111111111'),
-  interac           : new CardNumberFixture(),
   switchSolo        : new CardNumberFixture('6331101999990016')
 };
 

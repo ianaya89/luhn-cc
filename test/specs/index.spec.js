@@ -6,6 +6,20 @@ import luhnCC from '../../src';
 
 describe('luhnCC - JavaScript library to validate credit card numbers using luhn algorithm', () => {
 
+  describe('cardNumbersRegex', () => {
+    it('should has 8 properties of regex type', () => {
+      const keys = Object.keys(luhnCC.cardNumbersRegex);
+
+      keys.forEach(k => assert.ok(luhnCC.cardNumbersRegex[k] instanceof RegExp));
+
+      assert.equal(keys.length, 8);
+    });
+
+    it('should fail with a valid AMEX card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.amex.invalid), false);
+    });
+  });
+
   describe('isValid(cardNumber) => AMEX', () => {
     it('should pass validation with a valid AMEX card number', () => {
       assert.equal(luhnCC.isValid(cardNumbers.amex.valid), true);
@@ -93,6 +107,16 @@ describe('luhnCC - JavaScript library to validate credit card numbers using luhn
 
     it('should fail with a valid VISA card number', () => {
       assert.equal(luhnCC.isValid(cardNumbers.visa.invalid), false);
+    });
+  });
+
+  describe('isValid(cardNumber) => Switch/Solo', () => {
+    it('should pass validation with a valid Switch/Solo card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.switchSolo.valid), true);
+    });
+
+    it('should fail with a valid Switch/Solo card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.switchSolo.invalid), false);
     });
   });
 

@@ -1,5 +1,7 @@
+import cardNumbersRegex from './regex';
 
-const luhnCC = {};
+
+const luhnCC = { cardNumbersRegex };
 
 luhnCC.isValid = function(cardNumber) {
   if (/[^0-9-\s]+/.test(cardNumber)) { return false; }

@@ -10,7 +10,8 @@ const cardNumbers = {
   amexCorporate: new CardNumberFixture('378734493671000'),
   australianBankCard: new CardNumberFixture('5610591081018250'),
   dinersClub: new CardNumberFixture('30569309025904'),
-  discover: new CardNumberFixture('6011111111111117')
+  discover: new CardNumberFixture('6011111111111117'),
+  jcb: new CardNumberFixture('3530111333300000')
 };
 
 

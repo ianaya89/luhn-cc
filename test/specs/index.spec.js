@@ -66,4 +66,14 @@ describe('luhnCC', () => {
     });
   });
 
+  describe('isValid(cardNumber) => JCB', () => {
+    it('should pass validation with a valid JCB card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.jcb.valid), true);
+    });
+
+    it('should fail with a valid JCB card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.jcb.invalid), false);
+    });
+  });
+
 });

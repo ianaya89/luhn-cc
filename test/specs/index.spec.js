@@ -4,7 +4,7 @@ import assert from 'assert';
 import cardNumbers from '../fixture/card-numbers';
 import luhnCC from '../../src';
 
-describe('luhnCC', () => {
+describe('luhnCC - JavaScript library to validate credit card numbers using luhn algorithm', () => {
 
   describe('isValid(cardNumber) => AMEX', () => {
     it('should pass validation with a valid AMEX card number', () => {

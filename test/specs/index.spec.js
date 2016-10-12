@@ -46,4 +46,14 @@ describe('luhnCC', () => {
     });
   });
 
+  describe('isValid(cardNumber) => Diners Club', () => {
+    it('should pass validation with a valid Diners Club card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.dinersClub.valid), true);
+    });
+
+    it('should fail with a valid Diners Club card number', () => {
+      assert.equal(luhnCC.isValid(cardNumbers.dinersClub.invalid), false);
+    });
+  });
+
 });

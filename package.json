@@ -1,6 +1,6 @@
 {
   "name": "luhn-cc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "JavaScript library to validate credit card numbers using luhn algorithm",
   "main": "dist/luhn-cc.min.js",
   "author": {

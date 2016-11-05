@@ -124,6 +124,10 @@ describe('luhnCC - JavaScript library to validate credit card numbers using luhn
     it('should fail with an invalid card number format', () => {
       assert.equal(luhnCC.isValid('ABCD'), false);
     });
+
+    it('should fail with an card number length greater to 19', () => {
+      assert.equal(luhnCC.isValid('12345678901234567890'), false);
+    });
   });
 
 });

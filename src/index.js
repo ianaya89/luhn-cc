@@ -4,6 +4,9 @@ import cardNumbersRegex from './regex';
 const luhnCC = { cardNumbersRegex };
 
 luhnCC.isValid = function(cardNumber) {
+  cardNumber = cardNumber.toString();
+
+  if (cardNumber.length > 19) { return false; }
   if (/[^0-9-\s]+/.test(cardNumber)) { return false; }
 
   let nCheck = 0;

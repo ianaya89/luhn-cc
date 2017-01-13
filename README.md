@@ -1,4 +1,4 @@
-# 💳✅❌ luhn-cc
+# 💳 ✅ ❌ luhn-cc
 
 [![npm version](https://badge.fury.io/js/luhn-cc.svg)](https://badge.fury.io/js/luhn-cc)
 [![CircleCI](https://circleci.com/gh/ianaya89/luhn-cc.svg?style=svg)](https://circleci.com/gh/ianaya89/luhn-cc)
